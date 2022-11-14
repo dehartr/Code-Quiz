@@ -1,7 +1,5 @@
 # Web APIs Challenge: Code Quiz
 
-## Task
-Build a timed coding quiz with multiple-choice questions. 
 
 ## User Story
 
