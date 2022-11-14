@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="./highscores.html" id="highscores">View Highscores</a>
+        </div>
+        <div id="timer" class="hide">
+          Time: <span id="time">0</span>
+        </div>
+      </nav>
+      <h1>Coding Quiz Challenge</h1>
+    </header>
+    <main>
+      <div id="overlay">
+        <div class="gamePrompt">
+          <p>Try to answer the following questions before time runs out! Incorrect answers will remove time from the clock.</p>
+          <button id="start">Start Quiz</button>
+        </div>
+      </div>
+      <div id="quiz"></div>
+
+      <div id="backing" class="hide">
+        <div id="question-response"></div>
+      </div>
+      <div id="highscore-prompt" class="wrapper hide">
+        Your final score is: <span id="final-time">0</span>
+        <form id="highscore-name">Please Enter your initials: 
+          <input id="name" type="text" maxlength="3" required>
+          <button>Submit</button>
+        </form>
+      </div>
+    </main>
+	<script src="./assets/js/script.js"></script>
+  </body>
+</html>
