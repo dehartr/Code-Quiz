@@ -1,0 +1,155 @@
+:root {
+    --f-family: 'Futura', 'Verdana', 'Arial', open-sans, san-serif;
+    --c-primary: #563d7c;
+    --c-primary-hover: #8570a5;
+    --c-light: #ffffff;
+    --c-dark: #000000;
+    --c-correct: #78f17ecc;
+    --c-wrong: #da6666cc;
+}
+
+body,
+p,
+div,
+span {
+    font-size: large;
+}
+
+body {
+    font-family: var(--f-family);
+    font-weight: normal;
+}
+header {
+    height: 100px;
+    border-bottom: var(--c-primary) solid 4px;
+}
+
+nav {
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+nav div {
+    padding: 1rem 1rem 0 1rem;
+}
+
+button { 
+    display: block;
+    background: var(--c-primary);
+    color: var(--c-light);
+    margin: 2%;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: var(--c-primary-hover);
+}
+
+form button {
+    display: inline-block;
+}
+
+a {
+    color: var(--c-primary);
+}
+
+a:hover {
+    color: var(--c-primary-hover);
+}
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+}
+
+p {
+    font-weight: 700;
+    font-size: x-large;
+}
+
+.gamePrompt {
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    padding: 45px;
+}
+
+#quiz {
+    max-width: 600px;
+    text-align: center;
+    margin: 5% auto;
+}
+
+.question-list {
+    text-align: left;
+}
+
+.question-list li {
+    list-style: none;
+}
+
+.question button {
+    margin: 5px;
+    padding: 5px;
+}
+
+.scores-controls{
+    text-align: center;
+}
+
+.scores-controls button {
+    display: inline-block;
+}
+
+#question-response {
+    display: inline-block;
+    font-size: xx-large;
+    transition: ease-in 250ms;
+    padding: 25%;
+}
+
+#question-response.correct {
+    background: var(--c-correct);
+}
+
+#question-response.wrong {
+    background: var(--c-wrong);
+}
+
+#backing {
+    position: absolute;
+    top: 100px;
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    background: #ffffff;
+    z-index: 2;
+}
+
+#overlay {
+    height: calc(100vh - 100px);
+    text-align: center;
+    z-index: 2;
+}
+
+#overlay button {
+    display: inline-block;
+}
+
+.wrapper {
+    width: 40%;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+#highscore-list {
+    text-align: center;
+    list-style-position: inside;
+}
+
+.hide {
+    display: none;
+}
