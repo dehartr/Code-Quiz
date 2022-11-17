@@ -28,4 +28,4 @@ THEN I can save my initials and my score
 
 ![Code Quiz Mock-up](assets/images/04-web-apis-homework-demo.gif)
 
-Creation URL:  https://github.com/dehartr/Code-Quiz
+Creation URL:  https://dehartr.github.io/Code-Quiz/
